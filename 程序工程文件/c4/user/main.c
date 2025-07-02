@@ -128,13 +128,13 @@ int main(){
 			float start=1000;
 			LCD_WRITE_StrDATA("________________",0,0);
 			LED2_ON();
-			for(int j=0; j<450; j++){
+			for(int j=0; j<100; j++){
 				LED1_ON();
 				for(int i=0; i<2; i++){
 					keyscan1(password1);
 				}
 				LED1_OFF();
-				for(int i=0; i<((int)((pow(((double)0.995),((double)j)))*50)-2); i++){
+				for(int i=0; i<((int)((pow(((double)0.978),((double)j)))*50)-2); i++){
 				//for(int i=0; i<((int)((0.125)*50)-2); i++){
 				//for(int i=0; i<((int)((-0.013*((float)j)+1)*50)); i++){
 					keyscan1(password1);
